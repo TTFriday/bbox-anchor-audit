@@ -1,0 +1,28 @@
+{
+ "brandenburg": {
+  "counters": {
+   "declared_equals_raw:True": 20016,
+   "declared_equals_shown:True": 20016,
+   "media_absent": 4,
+   "orientation:1": 20016,
+   "readable": 20016,
+   "transpose_changes_size:False": 20016
+  },
+  "median_declared_aspect": 0.6666666666666666,
+  "median_raw_aspect": 0.6666666666666666,
+  "samples": 20020
+ },
+ "saxony": {
+  "counters": {
+   "declared_equals_raw:False": 1387,
+   "declared_equals_shown:True": 1387,
+   "orientation:6": 1385,
+   "orientation:8": 2,
+   "readable": 1387,
+   "transpose_changes_size:True": 1387
+  },
+  "median_declared_aspect": 0.75,
+  "median_raw_aspect": 1.3333333333333333,
+  "samples": 1387
+ }
+}

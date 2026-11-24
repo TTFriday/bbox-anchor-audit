@@ -1,0 +1,224 @@
+
+==============================================================================
+01_AppleGrowthVision_2025
+metadata.json: {"media_type": "group", "name": "AppleGrowthVision", "persistent": true}
+  info.bbch_scale = Extended BBCH scale for pome fruit (Meier 1994). The first digit of `bbch_code` is the principal growth stage: 0=Bud development, 1=Leaf development, 3=Shoot development, 5=Inflorescence emergence, 6=Flowering, 7=Develop ...
+  info.description = AppleGrowthVision: apple orchard imagery from two German field sites (Brandenburg fixed stereo rig, Saxony/Pillnitz handheld smartphone) covering a full phenological growth cycle, labeled with the extended BBCH scale for ...
+  info.paper = arXiv:2505.14029
+  info.paper_reported_stats = {'stereo_images': 9317, 'densely_annotated_images': 1125, 'apple_labels': 31084, 'note': "As reported in the paper abstract. The downloaded data on disk / imported here has somewhat different counts (e.g. 10,010 Brandenb ...
+  info.source = https://datacloud.hhi.fraunhofer.de/s/KLFXDw9cWSzXk95
+README.md:
+     7  license: cc-by-4.0
+    96  is densely annotated with apple bounding boxes. Ten Pillnitz trees also carry
+   107  FiftyOne conversion shared by Harpreet Sahota
+   109  - **License:** CC BY 4.0
+   113  - **Repository:** https://fraunhofer-hhi.github.io/AppleGrowthVision /
+   115  - **Paper:** [AppleGrowthVision: A large-scale stereo dataset for
+   117  orchards](https://arxiv.org/abs/2505.14029) (arXiv:2505.14029)
+   140  (~6.8%) have `ground_truth` apple bounding boxes, concentrated in
+   184  | `ground_truth` | `Detections` | Apple bounding boxes (single class `apple`), converted from the source COCO annotations. Only present on samples that were part of the paper's dense-annotation pass; may be an *empty* `Detections` for reviewed-but-empty images (see below) |
+   192  `apple`, with relative `[x, y, w, h]` bounding boxes, plus per-box `area` and
+   193  `iscrowd` carried over from the source COCO annotations. Bounding boxes (not
+   206  (arXiv id)
+   212  the released data itself, not in the FiftyOne conversion.
+   286  Apple bounding-box annotation used an in-house annotation tool combining
+   287  AI-assisted pre-labeling with human verification: a YOLOv8 model was first
+   294  images; final boxes are stored in Darknet/YOLO format and converted to COCO
+   304  Apple bounding boxes: the paper's authors/team, using the semi-automated
+   315  ## Citation
+   328  journal = {arXiv preprint arXiv:2505.14029},
+   338  fruit detection, and 3D reconstruction in apple orchards. *arXiv preprint
+   339  arXiv:2505.14029*.
+   343  Extending MinneApple with AppleGrowthVision improved YOLOv8 F1-score by
+fiftyone.yml: description: Apple orchard imagery from two German field sites (Brandenburg fixed |   stereo rig, Saxony/Pillnitz handheld smartphone) covering a full phenological growth |   cycle, labeled with the extended BBCH scale for pome fruit and dense apple bounding-box |   annotations for a subset of image
+
+==============================================================================
+02_TomatoMAP_2026
+metadata.json: {"media_type": "group", "name": "tomato-map", "persistent": true}
+  info.camera_calibration = Per-camera intrinsics + distortion coefficients for the 4 rig cameras are in data/calibration/pi{1-4}.npz (not attached to FiftyOne samples; no extrinsic rig geometry is provided, only the nominal elevation/turntable ang ...
+  info.code_repository = https://github.com/0YJ/TomatoMAP
+  info.dataset_doi = 10.5447/ipk/2025/14
+  info.dataset_repository = e!DAL, IPK Gatersleben
+  info.det_cls_source = 64,464 images from a synchronized 4-camera rig (elevations 45/90/135/180 deg) + turntable (12 poses, 30 deg increments), 101 Solanum lycopersicum 'Money Maker' plants, JKI Quedlinburg greenhouse, captured 2023-08-16 to 2 ...
+  info.known_data_notes = 1 of 64,464 det images has no YOLO label file (see the 'det-missing-labels' saved view). Paper Table 3 lists 91,120 instances for BBCH 80-89, but the exact count in the released data is 9,120 (10,560 + 29,328 + 9,120 = 6 ...
+  info.license = CC BY 4.0
+  info.paper_doi = 10.1038/s41597-026-06926-9
+  info.paper_title = Tomato Multi-Angle Multi-Pose Dataset for Fine-Grained Phenotyping
+  info.paper_venue = Scientific Data (2026) 13:309
+  info.project_homepage = https://0yj.github.io/tomato_map/
+  info.seg_source = 3,605 macrophotographs (Panasonic Lumix DMC-FZ1000), captured 2024-02-01 to 2024-05-07 -- a separate imaging task (ISAT annotation JSONs reference project folder 'MPTSTD_dataset_boost', not 'TomatoMAP'). Not sample-joina ...
+README.md:
+     5  license: cc-by-4.0
+   120  ROI bounding-box annotation and a session-level BBCH growth-stage label (50
+   130  - **License:** CC BY 4.0
+   134  - **Repository:** [e!DAL / IPK Gatersleben](https://doi.org/10.5447/ipk/2025/14) (raw data); [github.com/0YJ/TomatoMAP](https://github.com/0YJ/TomatoMAP) (original TomatoMAP-Cls/Det builder + model code)
+   135  - **Paper:** [Zhang et al., "Tomato Multi-Angle Multi-Pose Dataset for Fine-Grained Phenotyping," Scientific Data (2026) 13:309](https://doi.org/10.1038/s41597-026-06926-9)
+   169  | `ground_truth` | `Detections` | both | Det: 7-class YOLO ROI boxes. Seg: instance masks over 10 fruit/flower-stage classes (each `Detection` also carries `isat_group` (int instance id), `area_px`, `iscrowd`). One shared field name since the two class vocabularies never overlap. |
+   191  Dataset-level metadata (not attached to individual samples): paper/dataset DOIs, code and project-homepage links, license, a description of each subset's imaging setup and capture window, a pointer to the (sample-unattached) camera calibration files, and known data-quality notes -- including that 1 of the 64,464 det images has no YOLO label file, and that the source paper's Table 3 lists 91,120 in ...
+   215  - **Seg masks are rasterized from ISAT polygon annotations** (`TomatoMAP-Seg/labels/*.json`) into per-detection boolean masks cropped to each object's bounding box.
+   222  Observer bias and inconsistency in manual plant phenotyping limit the accuracy and reproducibility of fine-grained trait analysis. TomatoMAP was built to provide a large, standardized, multi-view imaging dataset -- captured under a fixed IoT-based acquisition protocol -- to train and validate real-time, accuracy/efficiency-balanced computer vision models (MobileNetv3, YOLOv11, Mask R-CNN in the or ...
+   240  - **Det (ROI boxes):** a progressive, AI-assisted labeling workflow. An initial 1,780 images were manually labeled in Label Studio to train a first assistive model; that model pre-labeled 2,504 more images, which were expert-reviewed/corrected and merged in to train a second assistive model; a third round applied the second model to a 6,000-image pool with further expert validation; all annotation ...
+   252  ## Citation
+   264  doi     = {10.1038/s41597-026-06926-9}
+   272  doi       = {10.5447/ipk/2025/14}
+   278  Zhang, Y., Struckmeyer, S., Kolb, A., & Reichardt, S. (2026). Tomato Multi-Angle Multi-Pose Dataset for Fine-Grained Phenotyping. *Scientific Data*, 13, 309. https://doi.org/10.1038/s41597-026-06926-9
+   282  The original TomatoMAP-Cls/Det builder notebooks and model training/evaluation code are at [github.com/0YJ/TomatoMAP](https://github.com/0YJ/TomatoMAP). This FiftyOne version was built directly from the raw rig images + YOLO labels + ISAT segmentation JSONs (not from the authors' pre-built train/val/test split, since that split was generated with a random seed the authors' code controls, not distr ...
+fiftyone.yml: description: 'TomatoMAP: a multi-angle, multi-pose, multi-task tomato (Solanum lycopersicum) |   phenotyping dataset -- 64,464 rig images (4 camera elevations x 12 turntable poses) |   with 7-class ROI detections + 50-class BBCH growth-stage labels, plus 3,605 high-resolution |   macrophotographs wi
+
+==============================================================================
+03_LettuceMOTS_2024
+metadata.json: {"media_type": "video", "name": "lettucemots", "persistent": true}
+README.md:
+     5  license: cc-by-4.0
+   101  - **License:** The original authors did not explicitly state a data license (only "publicly released for the benefit of the community"); the accompanying code repository is licensed GPL-3.0. This FiftyOne re-release on Hugging Face Hub is tagged **CC-BY-4.0** as a reasonable default for open research re-distribution — please attribute the original paper (see Citation) if you use this dataset.
+   105  - **Repository:** [github.com/NanH5837/LettuceMOTS](https://github.com/NanH5837/LettuceMOTS)
+   106  - **Paper:** Hu, N., Su, D., Wang, S., Wang, X., Zhong, H., Wang, Z., Qiao, Y., & Tan, Y. (2024). Segmentation and tracking of vegetable plants by exploiting vegetable shape feature for precision spray of agricultural robots. *Journal of Field Robotics*, 41(3), 570–586. https://doi.org/10.1002/rob.22279 (preprint: [arXiv:2306.13518](https://arxiv.org/abs/2306.13518))
+   107  - **Demo:** [github.com/NanH5837/LettuceMOTS](https://github.com/NanH5837/LettuceMOTS) includes a demo video and reference YOLOv5-seg + shape-feature tracking implementation.
+   151  - `mask`: a boolean instance mask, cropped to the detection's own tight bounding box
+   152  - `bounding_box`: `[x, y, w, h]` in relative `[0, 1]` coordinates, computed as the tight extent of the instance mask (the source format ships pixel masks but no separate box annotation)
+   169  - **Bounding boxes are derived, not sourced**: the release does not ship separate bbox annotations, only masks; boxes are the tight pixel extent of each decoded instance mask.
+   172  - **YOLOv5-seg polygon labels not imported**: the release also ships a secondary, redundant label set (`LettuceMOTSyolo/`, normalized polygon labels in YOLOv5-seg format) for convenience training with the reference implementation. These cover only the 9 training sequences, carry no track ID, and are fully derivable from the mask/RLE ground truth already imported — they were left out of the FiftyOn ...
+   173  - **Pretrained weights** (`weights/0003.pt`, `0007.pt`, `0011.pt`, one YOLOv5m-seg checkpoint per held-out test sequence) were downloaded alongside the dataset but are not part of the FiftyOne dataset itself; they require the original repo's `models/` code on `sys.path` to unpickle (not vanilla `ultralytics`).
+   185  Images were collected by VegeBot, a four-wheel-steer, four-wheel-drive agricultural robot, in a lettuce farm in Tongzhou District, Beijing, China, in September–October 2022. Lettuces were spaced ~0.15–0.25 m apart within a row and ~0.25–0.3 m between rows, with weed density up to ~10/m². Data was collected at 3 growth stages. A downward-facing RGB camera (1/2.8" Sony IMX317 CMOS sensor) was mounte ...
+   195  Frames were manually annotated in CVAT with per-instance segmentation masks and consistent per-object track IDs across each sequence, then exported to a KITTI-MOTS-style text format (`frame_id object_id category img_height img_width RLE`) — one line per object instance per frame. `category` is always `1` (vegetable/lettuce). A secondary polygon-format label set for direct YOLOv5-seg training was a ...
+   199  The paper states CVAT was used for annotation but does not name or describe the individual annotators.
+   205  ## Citation
+   219  doi       = {10.1002/rob.22279}
+   225  Hu, N., Su, D., Wang, S., Wang, X., Zhong, H., Wang, Z., Qiao, Y., & Tan, Y. (2024). Segmentation and tracking of vegetable plants by exploiting vegetable shape feature for precision spray of agricultural robots. *Journal of Field Robotics*, 41(3), 570–586. https://doi.org/10.1002/rob.22279
+   231  Do not confuse this dataset with the earlier, related **LettuceMOT** (no "S") dataset from the same lab and robot platform, which has bounding-box-only MOT annotations (no segmentation masks) and is hosted separately on Mega.nz.
+fiftyone.yml: description: Lettuce multi-object tracking and segmentation (MOTS) dataset captured |   by the VegeBot agricultural robot. 12 video sequences (1,308 frames total) with |   per-frame instance segmentation masks and persistent track IDs, purpose-built to |   study re-identification of vegetable plants
+
+==============================================================================
+04_WeedsGalore_2025
+metadata.json: {"media_type": "image", "name": "weeds-galore", "persistent": true}
+  info.bands = ['R', 'G', 'B', 'NIR', 'RE']
+  info.citation = Celikkan, E., Kunzmann, T., Yeskaliyev, Y., Itzerott, S., Klein, N., & Herold, M. (2025). WeedsGalore: A Multispectral and Multitemporal UAV-Based Dataset for Crop and Weed Segmentation in Agricultural Maize Fields. WACV ...
+  info.classes = {'0': 'background', '1': 'maize', '2': 'amaranth', '3': 'barnyard_grass', '4': 'quickweed', '5': 'weed_other'}
+  info.code = https://github.com/GFZ/weedsgalore
+  info.notes = filepath is an 8-bit RGB composite (derived from the raw 16-bit R/G/B bands) used for standard grid/App viewing.
+  info.paper = https://arxiv.org/abs/2502.13103
+  info.source = https://doidata.gfz.de/weedsgalore_e_celikkan_2024/
+README.md:
+     4  license: cc-by-4.0
+   144  - **License:** CC BY 4.0 (Attribution 4.0 International)
+   148  - **Repository:** [github.com/GFZ/weedsgalore](https://github.com/GFZ/weedsgalore)
+   149  - **Paper:** [arxiv.org/abs/2502.13103](https://arxiv.org/abs/2502.13103)
+   150  - **Original data release:** [doidata.gfz.de/weedsgalore_e_celikkan_2024](https://doidata.gfz.de/weedsgalore_e_celikkan_2024/)
+   205  | `ground_truth` | `Detections` | One `Detection` per plant instance, with bounding box, per-instance mask, class label, and a custom `plant_instance_id` int attribute |
+   215  imagery are still available from the [original GFZ data release](https://doidata.gfz.de/weedsgalore_e_celikkan_2024/)
+   227  the source instance masks are per-instance polygons converted to per-instance
+   228  boolean masks with tight bounding boxes — the natural FiftyOne representation for
+   229  instance segmentation. Each `Detection.mask` is cropped to its bounding box (the
+   247  URL), `paper`, `code` (GitHub repo), `citation`, `classes` (the ID-to-name mapping
+   347  ## Citation
+   376  ("Maize2024") — see [arxiv.org/abs/2502.13103](https://arxiv.org/abs/2502.13103) for
+fiftyone.yml: description: 'WeedsGalore is a multispectral, multitemporal UAV dataset for crop and |   weed instance/semantic segmentation in agricultural maize fields (Celikkan et al., |   WACV 2025). It contains 156 raw drone tiles (600x600px, 5 bands: R/G/B/NIR/RE) from |   a maize field in Marquardt, Potsdam,
+
+==============================================================================
+05_PlantWild_2024
+metadata.json: {"media_type": "image", "name": "PlantWild", "persistent": true}
+  info.license = cc-by-nc-nd-4.0
+  info.paper = Benchmarking In-the-Wild Multimodal Plant Disease Recognition and A Versatile Baseline (ACM MM 2024) - https://arxiv.org/abs/2408.03120
+  info.source = https://huggingface.co/datasets/uqtwei2/PlantWild
+  info.versions = {'v1': '18,542 images, 89 classes (incl. healthy-leaf classes), official train/val/test split, source URLs, 50 GPT-generated text prompts per class', 'v2': '11,488 images, 115 disease-only classes, expert-refined, no spl ...
+README.md:
+     4  license: cc-by-nc-nd-4.0
+   112  - **License:** cc-by-nc-nd-4.0 (Attribution-NonCommercial-NoDerivatives 4.0). This FiftyOne mirror repackages the same images and labels (no creative modification) with full attribution; redistribution/use should respect the NonCommercial and NoDerivatives terms of the original license.
+   116  - **Repository:** https://huggingface.co/datasets/uqtwei2/PlantWild (source data), https://github.com/tqwei05/MVPDR (official baseline code and data loaders)
+   117  - **Paper:** Wei, T., Chen, Z., Huang, Z., & Yu, X. (2024). [Benchmarking In-the-Wild Multimodal Plant Disease Recognition and A Versatile Baseline](https://arxiv.org/abs/2408.03120). ACM International Conference on Multimedia (ACM MM 2024).
+   131  - **Commercial use or redistribution of modified/derivative versions** — disallowed by the source cc-by-nc-nd-4.0 license.
+   160  "paper": "Benchmarking In-the-Wild Multimodal Plant Disease Recognition and A Versatile Baseline (ACM MM 2024) - https://arxiv.org/abs/2408.03120",
+   161  "license": "cc-by-nc-nd-4.0",
+   230  ## Citation
+   249  - Project homepage: https://tqwei05.github.io/PlantWild/
+fiftyone.yml: description: 'PlantWild: a large-scale in-the-wild multimodal plant disease recognition |   dataset with 18,542 (v1) + 11,488 (v2) images and GPT-3.5-generated descriptive |   text prompts per disease class. Parsed into FiftyOne format from https://huggingface.co/datasets/uqtwei2/PlantWild.' | fifty
+
+==============================================================================
+06_WE3DS_2023
+metadata.json: {"media_type": "image", "name": "we3ds", "persistent": true}
+  info.class_names = ['void', 'soil', 'broad bean', 'corn spurry', 'red-root amaranth', 'common buckwheat', 'pea', 'red fingergrass', 'common wild oat', 'cornflower', 'corn cockle', 'corn', 'milk thistle', 'rye brome', 'soybean', 'sunflower' ...
+  info.description = WE3DS: an RGB-D image dataset for semantic segmentation of crops and weeds in agricultural fields (Kitzler et al., Sensors 2023).
+  info.source = https://doi.org/10.3390/s23052713
+README.md:
+     2  license: cc-by-4.0
+    66  - **License:** CC BY 4.0
+    70  - **Repository (original data + code):** https://doi.org/10.5281/zenodo.7457983
+    71  - **Paper:** Kitzler, F.; Barta, N.; Neugschwandtner, R.W.; Gronauer, A.; Motsch, V. WE3DS: An RGB-D Image Dataset for Semantic Segmentation in Agriculture. *Sensors* 2023, 23, 2713. https://doi.org/10.3390/s23052713
+   116  The original annotation process (CVAT, polygon-per-plant-instance) produced instance
+   135  "source": "https://doi.org/10.3390/s23052713",
+   183  normalized cross-correlation stereo matching (`binocular_distance`, 21-pixel template).
+   200  Ground-truth annotation was performed in CVAT (Computer Vision Annotation Tool).
+   222  ## Citation
+   236  doi       = {10.3390/s23052713}
+   242  Kitzler, F., Barta, N., Neugschwandtner, R. W., Gronauer, A., & Motsch, V. (2023). WE3DS: An RGB-D Image Dataset for Semantic Segmentation in Agriculture. *Sensors*, 23(5), 2713. https://doi.org/10.3390/s23052713
+   247  https://doi.org/10.5281/zenodo.7457983. In the source paper's benchmark, an RGB-D
+   255  Harpreet Sahota (FiftyOne conversion and dataset card)
+fiftyone.yml: description: 'WE3DS: an RGB-D image dataset for multi-class plant species semantic |   segmentation of crops and weeds in agricultural fields, captured under natural light |   conditions (Kitzler et al., Sensors 2023).' | fiftyone: |   version: '>=1.0.0' | format: FiftyOneDataset | license: cc-by-4.
+
+==============================================================================
+07_CropAndWeed_2023
+metadata.json: {"media_type": "image", "name": "CropAndWeed", "persistent": true}
+  info.license = Released to academic and non-academic entities for non-commercial purposes only
+  info.paper = Steininger et al., The CropAndWeed Dataset: A Multi-Modal Learning Approach for Efficient Crop and Weed Manipulation, WACV 2023
+  info.source = https://github.com/cropandweed/cropandweed-dataset
+README.md:
+     2  license: other
+     3  license_name: cropandweed-non-commercial
+     4  license_link: https://github.com/cropandweed/cropandweed-dataset/blob/main/LICENCE
+    23  This is a FiftyOne dataset with 8,034 samples, converted from the official
+    26  species-and-growth-stage classes, provided as 2D bounding boxes, stem
+    62  automated, plant-specific weed intervention. It provides bounding boxes, stem positions,
+    79  format conversion was prepared by Harpreet Sahota
+    81  - **License:** Custom non-commercial research license (see [Dataset Sources](#dataset-sources) and [More Information](#more-information))
+    85  - **Repository:** https://github.com/cropandweed/cropandweed-dataset
+    86  - **Paper:** [The CropAndWeed Dataset: A Multi-Modal Learning Approach for Efficient Crop and Weed Manipulation](https://openaccess.thecvf.com/content/WACV2023/papers/Steininger_The_CropAndWeed_Dataset_A_Multi-Modal_Learning_Approach_for_Efficient_Crop_WACV_2023_paper.pdf) (WACV 2023)
+   105  the dataset license.
+   116  raw annotation release (`bboxes/`, `labelIds/CropAndWeed/`, `params/`), preserving every
+   126  | `ground_truth` | `Detections` | One `Detection` per annotated plant instance (2D bounding box), `label` is one of 100 fine-grained species/growth-stage classes (or the `Vegetation` fallback class) |
+   136  - **`ground_truth` (`Detections`)** — each row of the source `bboxes/*.csv` files
+   137  (`Left, Top, Right, Bottom, LabelID, StemX, StemY`) is converted to a `Detection` with
+   138  a relative `[x, y, w, h]` bounding box (required by FiftyOne). Each `Detection` also
+   143  paper), so the stem position accompanying every bounding-box row is *also* materialized
+   144  as a normalized-coordinate `Keypoint`, letting it be visualized and queried independently
+   158  **`dataset.info`** contains the source repository URL, paper citation, and a short license
+   169  - 234 of the 8,034 images have no annotated plant instances (their source bounding-box
+   187  with multi-modal annotations (bounding boxes, semantic masks, and stem positions) rarely
+   211  and camera parameters recorded by the authors (not part of this FiftyOne conversion).
+   226  class. Bounding boxes were then auto-generated from the refined mask and manually corrected,
+   242  ## Citation
+   271  permitted. See the [official license](https://github.com/cropandweed/cropandweed-dataset/blob/main/LICENCE)
+   281  Harpreet Sahota (FiftyOne conversion and dataset card)
+fiftyone.yml: description: 'Large-scale, high-variability precision-agriculture dataset (WACV 2023) |   with 8,034 high-resolution images annotated with 100 fine-grained crop/weed species-and-growth-stage |   classes: 2D bounding boxes, stem keypoints, semantic segmentation masks, and per-image |   environmental 
+
+==============================================================================
+08_PhenoBench_2024
+metadata.json: {"media_type": "image", "name": "PhenoBench", "persistent": true}
+  info.field_location = {'description': 'All images were captured via UAV from a single ~1300 m^2 sugar beet field', 'site': 'Campus Klein-Altendorf farm, University of Bonn, between Meckenheim and Rheinbach, Germany', 'latitude': 50.6252, 'lon ...
+README.md:
+     4  license: cc-by-sa-4.0
+   131  - **Shared by:** Harpreet Sahota (FiftyOne conversion); original dataset by the PhenoBench authors (University of Bonn)
+   133  - **License:** CC BY-SA 4.0, per the [official dataset page](https://www.phenobench.org/dataset.html). Note: the `README.MD` bundled inside the downloaded `PhenoBench-v110.zip` (v1.1.0) instead states CC BY-NC-SA 4.0, citing the earlier 2023 arXiv preprint. This card follows the current, live license terms published on the official website, which cites the 2024 T-PAMI publication. If you need cert ...
+   137  - **Repository:** [github.com/PRBonn/phenobench](https://github.com/PRBonn/phenobench) (devkit), [github.com/PRBonn/phenobench-baselines](https://github.com/PRBonn/phenobench-baselines) (baselines)
+   138  - **Paper:** [PhenoBench — A Large Dataset and Benchmarks for Semantic Image Interpretation in the Agricultural Domain](https://arxiv.org/abs/2306.04557), IEEE T-PAMI, 46(12), 9583–9594, 2024
+   179  | `mask` | boolean array | Per-instance segmentation mask, cropped to the instance's bounding box |
+   180  | `visibility` | float, 0–1 | Fraction of the instance visible in-frame, derived from `plant_visibility`/`leaf_visibility` (0–255 in the source, normalized here). Instances with a mostly-visible plant are labeled `crop`/`weed`; instances with <50% visible pixels are labeled `partial_crop`/`partial_weed` |
+   198  - **Instance → Detection conversion.** By directly inspecting the pixel data, we verified that every `plant_instances` id maps to exactly one semantic class and one constant `plant_visibility` value across all of its pixels, and every `leaf_instances` id belongs to exactly one parent plant instance (leaves are only annotated for crops, never weeds). This let us convert the raw instance-id arrays i ...
+   228  Crop plant instances also carry a temporally-consistent id across the three 2020 recording dates: camera poses were estimated via RTK-GNSS-initialized bundle adjustment, and crop centroids were associated across dates using Hungarian matching (15 cm distance threshold), refined with a small number of manually-associated anchor plants per date pair. This associated 583 unique crop plants over the s ...
+   239  ## Citation
+   269  Harpreet Sahota (FiftyOne conversion and dataset card)
+fiftyone.yml: description: PhenoBench is a large-scale dataset for semantic image interpretation |   in the agricultural domain. It provides 2,872 high-resolution UAV images (1024x1024) |   of a real sugar beet field at three growth stages, with dense pixel-wise semantic |   segmentation (background/crop/weed/par
+
+==============================================================================
+09_Crops3D_2024
+metadata.json: {"media_type": "3d", "name": "crops3d", "persistent": true}
+README.md:
+   159  **License:** Creative Commons Attribution 4.0 International (CC BY 4.0)
+   163  **Repository:** https://github.com/clawCa/Crops3D
+   165  **Paper:** https://doi.org/10.1038/s41597-024-04290-0
+   286  ## Citation
+   298  doi={10.1038/s41597-024-04290-0},
+   305  Zhu, J., Zhai, R., Ren, H., Xie, K., Du, A., He, X., Cui, C., Wang, Y., Ye, J., Wang, J., Jiang, X., Wang, Y., Huang, C., & Yang, W. (2024). Crops3D: a diverse 3D crop dataset for realistic perception and segmentation toward agricultural applications. *Scientific Data*, 11, 1438. https://doi.org/10.1038/s41597-024-04290-0
+fiftyone.yml: format: FiftyOneDataset | name: crops3d | tags: | - 3d | - fiftyone | - image-classification
+
+==============================================================================
+10_StomaQuant_2026

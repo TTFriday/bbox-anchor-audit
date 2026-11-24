@@ -1,0 +1,110 @@
+[
+ {
+  "stored_as": "centre",
+  "read_as": "corner",
+  "invariant": true,
+  "min": 0.14285714285713705,
+  "max": 0.14285714285716605,
+  "value": 0.14285714285713705,
+  "one_over": 7.000000000000284
+ },
+ {
+  "stored_as": "centre",
+  "read_as": "half",
+  "invariant": true,
+  "min": 0.24999999999998224,
+  "max": 0.25000000000007105,
+  "value": 0.24999999999998224,
+  "one_over": 4.000000000000284
+ },
+ {
+  "stored_as": "centre",
+  "read_as": "corners",
+  "invariant": false,
+  "min": 0.0,
+  "max": 0.25,
+  "value": null,
+  "one_over": null
+ },
+ {
+  "stored_as": "corner",
+  "read_as": "centre",
+  "invariant": true,
+  "min": 0.14285714285713705,
+  "max": 0.14285714285716605,
+  "value": 0.14285714285713705,
+  "one_over": 7.000000000000284
+ },
+ {
+  "stored_as": "corner",
+  "read_as": "half",
+  "invariant": true,
+  "min": 0.24999999999999997,
+  "max": 0.25000000000000056,
+  "value": 0.24999999999999997,
+  "one_over": 4.000000000000001
+ },
+ {
+  "stored_as": "corner",
+  "read_as": "corners",
+  "invariant": false,
+  "min": 0.0,
+  "max": 1.0,
+  "value": null,
+  "one_over": null
+ },
+ {
+  "stored_as": "half",
+  "read_as": "centre",
+  "invariant": true,
+  "min": 0.24999999999971578,
+  "max": 0.25000000000007105,
+  "value": 0.24999999999971578,
+  "one_over": 4.0000000000045475
+ },
+ {
+  "stored_as": "half",
+  "read_as": "corner",
+  "invariant": true,
+  "min": 0.24999999999999997,
+  "max": 0.25000000000000006,
+  "value": 0.24999999999999997,
+  "one_over": 4.000000000000001
+ },
+ {
+  "stored_as": "half",
+  "read_as": "corners",
+  "invariant": true,
+  "min": 0.0,
+  "max": 0.0,
+  "value": 0.0,
+  "one_over": null
+ },
+ {
+  "stored_as": "corners",
+  "read_as": "centre",
+  "invariant": false,
+  "min": 3.9912177245198765e-07,
+  "max": 0.22735530755255645,
+  "value": null,
+  "one_over": null
+ },
+ {
+  "stored_as": "corners",
+  "read_as": "corner",
+  "invariant": false,
+  "min": 3.991217724519876e-07,
+  "max": 1.0,
+  "value": null,
+  "one_over": null
+ },
+ {
+  "stored_as": "corners",
+  "read_as": "half",
+  "invariant": false,
+  "min": 9.97804431129969e-08,
+  "max": 0.25,
+  "value": null,
+  "one_over": null
+ }
+]

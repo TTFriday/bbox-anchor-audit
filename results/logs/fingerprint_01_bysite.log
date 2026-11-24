@@ -1,0 +1,22 @@
+
+### 01_AppleGrowthVision_2025  samples.json  arrays=23854  parsed=23854  tol=1e-05
+
+01_AppleGrowthVision_2025    samples.json  brandenburg/ground_truth
+  n=    3293  classes=1  one-sided=False  S1 orientation=centre
+  centre read  L=1.73%(0.026)  R=0.03%(0.001)  T=0.82%(0.017)  B=0.00%(0.000)   strict L/R/T/B=58/1/27/0
+  corner read  L=0.00%(0.000)  R=0.70%(0.027)  T=0.00%(0.000)  B=0.15%(0.005)   strict L/R/T/B=0/23/0/5
+  IoU[min,med,max]=[0.142857, 0.142857, 0.142857]  not 1/7 = 0.0000%
+  boundary mass%  x=0.18 y=0.21 | cornerR=0.00 cornerB=0.00 (exact 0.00/0.00) | centreR=0.00 centreB=0.00 | w=0.00 h=0.00
+  components     min x=0 y=0  max cornerR=1.02684 cornerB=1.0054  neg=0 (beyond tol 0) deg=0
+  pixel aspect   p05/p50/p95=[0.826, 1.002, 1.244]  implausible=0.03%  area p50=0.000568295
+
+01_AppleGrowthVision_2025    samples.json  saxony/ground_truth
+  n=   20561  classes=1  one-sided=False  S1 orientation=both
+  centre read  L=2.19%(0.091)  R=0.01%(0.001)  T=0.19%(0.106)  B=0.02%(0.013)   strict L/R/T/B=451/2/40/4
+  corner read  L=0.14%(0.004)  R=0.27%(0.020)  T=0.00%(0.000)  B=0.13%(0.058)   strict L/R/T/B=28/55/0/26
+  IoU[min,med,max]=[0.000000, 0.142857, 0.142857]  not 1/7 = 0.0049%
+  boundary mass%  x=0.63 y=0.00 | cornerR=0.00 cornerB=0.00 (exact 0.00/0.00) | centreR=0.00 centreB=0.00 | w=0.00 h=0.00
+  components     min x=-0.00364964 y=0  max cornerR=1.01993 cornerB=1.05828  neg=28 (beyond tol 28) deg=1
+  pixel aspect   p05/p50/p95=[0.242, 0.316, 0.451]  implausible=58.747%  area p50=0.000549051
+
+wrote ../data/fingerprint_01_bysite.json

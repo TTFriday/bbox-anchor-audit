@@ -1,0 +1,127 @@
+{
+  "_source": "Historical capped-sample aggregates.  The corresponding logs are in results/logs/.  These values are not a full-population pass and are never pooled with fingerprint.json.",
+  "greenness_gain": {
+    "_note": "Fraction of inside-box pixels where G exceeds R and B by 5, minus the same fraction in same-size control boxes at random offsets. Larger is better.",
+    "WeedsGalore": {
+      "centre": 0.0756,
+      "corner": 0.2603,
+      "images": 156,
+      "boxes": 12197,
+      "n_centre": 7368,
+      "n_corner": 7641
+    },
+    "CropAndWeed": {
+      "centre": 0.0699,
+      "corner": 0.2935,
+      "images": 7800,
+      "boxes": 111953,
+      "n_centre": 3201,
+      "n_corner": 3237
+    },
+    "PhenoBench": {
+      "centre": 0.1518,
+      "corner": 0.2442,
+      "images": 4358,
+      "boxes": 137191,
+      "n_centre": 5591,
+      "n_corner": 5708
+    },
+    "AppleGrowthVision": {
+      "centre": 0.0399,
+      "corner": 0.0493,
+      "images": null,
+      "boxes": null,
+      "n_centre": null,
+      "n_corner": null,
+      "informative": false
+    }
+  },
+  "semantic_mask_registration": {
+    "_note": "Boxes scored against the archive's own whole-image semantic mask. inside_foreground = share of box area covered by the foreground class; annulus = share in a 0.1*width ring just outside; tightness = ratio of the two; four_side_fit = share of boxes whose mask bounding box matches the stored box on all four sides.",
+    "WeedsGalore": {
+      "centre": {
+        "inside_foreground": 0.2342,
+        "annulus": 0.2155,
+        "tightness": 0.0187,
+        "four_side_fit": 0.6832
+      },
+      "corner": {
+        "inside_foreground": 0.4832,
+        "annulus": 0.1384,
+        "tightness": 0.3448,
+        "four_side_fit": 1.0
+      }
+    },
+    "CropAndWeed": {
+      "centre": {
+        "inside_foreground": 0.1182,
+        "annulus": 0.095,
+        "tightness": 0.0231,
+        "four_side_fit": 0.5179
+      },
+      "corner": {
+        "inside_foreground": 0.4393,
+        "annulus": 0.0214,
+        "tightness": 0.4178,
+        "four_side_fit": 0.9773
+      }
+    },
+    "PhenoBench": null
+  },
+  "embedded_instance_masks": {
+    "_note": "Detection.mask run-length arrays decoded and located. shape_agreement = share of masks whose array shape equals the stored extent in pixels.",
+    "WeedsGalore ground_truth": {
+      "matched": 4835,
+      "total": 4835,
+      "four_side_fit": 1.0,
+      "foreground_centre": 0.2621,
+      "foreground_corner": 0.7264
+    },
+    "PhenoBench plants": {
+      "matched": 840,
+      "total": 840,
+      "four_side_fit": 1.0,
+      "foreground_centre": 0.1116,
+      "foreground_corner": 0.3487
+    },
+    "PhenoBench leaves": {
+      "matched": 2801,
+      "total": 2801,
+      "four_side_fit": 1.0,
+      "foreground_centre": 0.293,
+      "foreground_corner": 0.5588
+    },
+    "TomatoMAP ground_truth": {
+      "matched": 536,
+      "total": 536,
+      "four_side_fit": 0.5009,
+      "foreground_centre": 0.2177,
+      "foreground_corner": 0.2499
+    }
+  },
+  "class_nesting": {
+    "_note": "A leaf box must lie inside the box of the plant it belongs to. coverage = median share of the child box covered by its best-matching parent; contained_pct = share of children fully contained.",
+    "TomatoMAP": {
+      "images": 3001,
+      "centre": {
+        "coverage": 0.4987,
+        "contained_pct": 31.0
+      },
+      "corner": {
+        "coverage": 1.0,
+        "contained_pct": 99.9
+      }
+    },
+    "PhenoBench": {
+      "images": 2179,
+      "centre": {
+        "coverage": 0.5049,
+        "contained_pct": 31.7
+      },
+      "corner": {
+        "coverage": 1.0,
+        "contained_pct": 88.2
+      }
+    }
+  }
+}

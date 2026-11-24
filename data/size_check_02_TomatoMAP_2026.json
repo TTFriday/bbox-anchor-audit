@@ -1,0 +1,14 @@
+{
+ "(all)": {
+  "counters": {
+   "declared_equals_raw:True": 500,
+   "declared_equals_shown:True": 500,
+   "orientation:none": 500,
+   "readable": 500,
+   "transpose_changes_size:False": 500
+  },
+  "median_declared_aspect": 0.75,
+  "median_raw_aspect": 0.75,
+  "samples": 500
+ }
+}

@@ -1,0 +1,85 @@
+
+### 01_AppleGrowthVision_2025  samples.json  arrays=23854  parsed=23854  tol=1e-05
+
+01_AppleGrowthVision_2025    samples.json  ground_truth
+  n=   23854  classes=1  one-sided=False  S1 orientation=both
+  centre read  L=2.13%(0.091)  R=0.01%(0.001)  T=0.28%(0.106)  B=0.02%(0.013)   strict L/R/T/B=509/3/67/4
+  corner read  L=0.12%(0.004)  R=0.33%(0.027)  T=0.00%(0.000)  B=0.13%(0.058)   strict L/R/T/B=28/78/0/31
+  IoU[min,med,max]=[0.000000, 0.142857, 0.142857]  not 1/7 = 0.0042%
+  boundary mass%  x=0.57 y=0.03 | cornerR=0.00 cornerB=0.00 (exact 0.00/0.00) | centreR=0.00 centreB=0.00 | w=0.00 h=0.00
+  components     min x=-0.00364964 y=0  max cornerR=1.02684 cornerB=1.05828  neg=28 (beyond tol 28) deg=1
+  pixel aspect   p05/p50/p95=[0.245, 0.329, 1.041]  implausible=50.641%  area p50=0.000554487
+
+### 02_TomatoMAP_2026  samples.json  arrays=589930  parsed=589930  tol=1e-05
+
+02_TomatoMAP_2026            samples.json  ground_truth
+  n=  589930  classes=17  one-sided=True  S1 orientation=neither
+  centre read  L=24.94%(0.500)  R=0.00%(0.000)  T=17.98%(0.500)  B=0.00%(0.000)   strict L/R/T/B=147106/0/106045/0
+  corner read  L=0.00%(0.000)  R=0.00%(0.000)  T=0.00%(0.000)  B=0.00%(0.000)   strict L/R/T/B=5733/6191/4406/11053
+  IoU[min,med,max]=[0.000000, 0.142857, 0.142857]  not 1/7 = 0.0002%
+  boundary mass%  x=4.13 y=3.22 | cornerR=4.86 cornerB=7.59 (exact 2.52/3.76) | centreR=0.00 centreB=0.00 | w=0.37 h=0.52
+  components     min x=-5e-06 y=-5e-06  max cornerR=1.00001 cornerB=1.00001  neg=10016 (beyond tol 0) deg=1
+  pixel aspect   p05/p50/p95=[0.498, 0.938, 1.801]  implausible=1.484%  area p50=0.0452859
+
+### 03_LettuceMOTS_2024  samples.json  arrays=0  parsed=0  tol=1e-05
+
+### 03_LettuceMOTS_2024  frames.json  arrays=17562  parsed=17562  tol=1e-05
+
+03_LettuceMOTS_2024          frames.json   ground_truth
+  n=   17562  classes=1  one-sided=True  S1 orientation=neither
+  centre read  L=0.00%(0.000)  R=0.00%(0.000)  T=13.97%(0.097)  B=0.00%(0.000)   strict L/R/T/B=0/0/2453/0
+  corner read  L=0.00%(0.000)  R=0.00%(0.000)  T=0.00%(0.000)  B=0.00%(0.000)   strict L/R/T/B=0/0/0/0
+  IoU[min,med,max]=[0.142857, 0.142857, 0.142857]  not 1/7 = 0.0000%
+  boundary mass%  x=0.00 y=9.42 | cornerR=0.00 cornerB=10.22 (exact 0.00/10.22) | centreR=0.00 centreB=0.00 | w=0.00 h=0.00
+  components     min x=0.197531 y=0  max cornerR=0.782716 cornerB=1  neg=0 (beyond tol 0) deg=0
+  pixel aspect   p05/p50/p95=[nan, nan, nan]  implausible=None%  area p50=0.012284
+
+### 04_WeedsGalore_2025  samples.json  arrays=12197  parsed=12197  tol=1e-05
+
+04_WeedsGalore_2025          samples.json  ground_truth
+  n=   12197  classes=5  one-sided=True  S1 orientation=neither
+  centre read  L=4.88%(0.399)  R=0.00%(0.000)  T=4.85%(0.191)  B=0.00%(0.000)   strict L/R/T/B=595/0/592/0
+  corner read  L=0.00%(0.000)  R=0.00%(0.000)  T=0.00%(0.000)  B=0.00%(0.000)   strict L/R/T/B=0/0/0/0
+  IoU[min,med,max]=[0.142857, 0.142857, 0.142857]  not 1/7 = 0.0000%
+  boundary mass%  x=3.07 y=2.66 | cornerR=3.08 cornerB=2.71 (exact 3.08/2.71) | centreR=0.00 centreB=0.00 | w=0.00 h=0.00
+  components     min x=0 y=0  max cornerR=1 cornerB=1  neg=0 (beyond tol 0) deg=0
+  pixel aspect   p05/p50/p95=[nan, nan, nan]  implausible=None%  area p50=0.000666667
+
+### 05_PlantWild_2024  samples.json  arrays=0  parsed=0  tol=1e-05
+
+### 06_WE3DS_2023  samples.json  arrays=0  parsed=0  tol=1e-05
+
+### 07_CropAndWeed_2023  samples.json  arrays=111953  parsed=111953  tol=1e-05
+
+07_CropAndWeed_2023          samples.json  ground_truth
+  n=  111953  classes=84  one-sided=True  S1 orientation=neither
+  centre read  L=3.73%(0.500)  R=0.00%(0.000)  T=6.28%(0.500)  B=0.00%(0.000)   strict L/R/T/B=4173/0/7036/0
+  corner read  L=0.00%(0.000)  R=0.00%(0.000)  T=0.00%(0.000)  B=0.00%(0.000)   strict L/R/T/B=0/0/0/0
+  IoU[min,med,max]=[0.000000, 0.142857, 0.142857]  not 1/7 = 0.1331%
+  boundary mass%  x=2.36 y=3.44 | cornerR=2.02 cornerB=2.87 (exact 2.02/2.87) | centreR=0.00 centreB=0.00 | w=0.08 h=0.11
+  components     min x=0 y=0  max cornerR=1 cornerB=1  neg=0 (beyond tol 0) deg=149
+  pixel aspect   p05/p50/p95=[0.417, 1.0, 2.5]  implausible=4.993%  area p50=0.00044807
+
+### 08_PhenoBench_2024  samples.json  arrays=137191  parsed=137191  tol=1e-05
+
+08_PhenoBench_2024           samples.json  ground_truth_leaves
+  n=  106767  classes=1  one-sided=True  S1 orientation=neither
+  centre read  L=8.30%(0.160)  R=0.00%(0.000)  T=7.61%(0.122)  B=0.00%(0.000)   strict L/R/T/B=8864/0/8130/0
+  corner read  L=0.00%(0.000)  R=0.00%(0.000)  T=0.00%(0.000)  B=0.00%(0.000)   strict L/R/T/B=0/0/0/0
+  IoU[min,med,max]=[0.142857, 0.142857, 0.142857]  not 1/7 = 0.0000%
+  boundary mass%  x=5.50 y=5.01 | cornerR=4.68 cornerB=5.22 (exact 4.68/5.22) | centreR=0.00 centreB=0.00 | w=0.00 h=0.00
+  components     min x=0 y=0  max cornerR=1 cornerB=1  neg=0 (beyond tol 0) deg=0
+  pixel aspect   p05/p50/p95=[0.413, 1.0, 2.352]  implausible=4.437%  area p50=0.00201416
+
+08_PhenoBench_2024           samples.json  ground_truth_plants
+  n=   30424  classes=4  one-sided=True  S1 orientation=neither
+  centre read  L=15.65%(0.331)  R=0.00%(0.000)  T=13.64%(0.291)  B=0.00%(0.000)   strict L/R/T/B=4760/0/4149/0
+  corner read  L=0.00%(0.000)  R=0.00%(0.000)  T=0.00%(0.000)  B=0.00%(0.000)   strict L/R/T/B=0/0/0/0
+  IoU[min,med,max]=[0.142857, 0.142857, 0.142857]  not 1/7 = 0.0000%
+  boundary mass%  x=10.26 y=8.85 | cornerR=8.93 cornerB=9.20 (exact 8.93/9.20) | centreR=0.00 centreB=0.00 | w=0.00 h=0.00
+  components     min x=0 y=0  max cornerR=1 cornerB=1  neg=0 (beyond tol 0) deg=0
+  pixel aspect   p05/p50/p95=[0.374, 1.0, 2.645]  implausible=7.08%  area p50=0.00285435
+
+### 09_Crops3D_2024  samples.json  arrays=0  parsed=0  tol=1e-05
+
+wrote ../data/fingerprint.json

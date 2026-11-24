@@ -1,0 +1,1029 @@
+{
+ "01_AppleGrowthVision_2025": {
+  "samples.json": {
+   "ground_truth": {
+    "area_wh": {
+     "p05": 0.00012198719356262434,
+     "p50": 0.000554487243466477,
+     "p95": 0.0014305770881435104
+    },
+    "aspect_pixels": {
+     "p05": 0.2450626428221128,
+     "p25": 0.29198183291686325,
+     "p50": 0.3288131128647763,
+     "p75": 0.39318548229195954,
+     "p95": 1.040620735627729
+    },
+    "aspect_pixels_implausible_pct": 50.641,
+    "aspect_w_over_h_normalised": {
+     "p05": 0.3267501904294837,
+     "p50": 0.4384191176470588,
+     "p95": 1.5602992735903127
+    },
+    "asymmetry_x": 0.986355,
+    "asymmetry_y": 0.875,
+    "boundary_clipping": {
+     "centre_bottom_edge": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 1.012877491613229,
+      "min": 0.011007506411804781
+     },
+     "centre_right_edge": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 1.0012780129909515,
+      "min": 0.002729166666666666
+     },
+     "corner_bottom_edge": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 1.0582770835144368,
+      "min": 0.018911567170377744
+     },
+     "corner_right_edge": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 1.0268434531831852,
+      "min": 0.004791666666666666
+     },
+     "extent_h": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.41910794404856155,
+      "min": 0.00227725590663249
+     },
+     "extent_w": {
+      "at_boundary_pct": 0.0042,
+      "exact_pct": 0.0042,
+      "max": 0.184272997032641,
+      "min": 0.0
+     },
+     "first_component": {
+      "at_boundary_pct": 0.5659,
+      "exact_pct": 0.5576,
+      "max": 0.9914163090128756,
+      "min": -0.003649635036496349
+     },
+     "second_component": {
+      "at_boundary_pct": 0.0335,
+      "exact_pct": 0.0335,
+      "max": 0.9866229891777039,
+      "min": 0.0
+     }
+    },
+    "boxes": 23854,
+    "centre_read_out_of_frame": {
+     "bottom": 4,
+     "bottom_count": 4,
+     "bottom_pct": 0.0168,
+     "bottom_strict_pct": 0.0168,
+     "bottom_worst_excess": 0.012877,
+     "left": 509,
+     "left_count": 508,
+     "left_pct": 2.1296,
+     "left_strict_pct": 2.1338,
+     "left_worst_excess": 0.091345,
+     "right": 3,
+     "right_count": 3,
+     "right_pct": 0.0126,
+     "right_strict_pct": 0.0126,
+     "right_worst_excess": 0.001278,
+     "top": 67,
+     "top_count": 67,
+     "top_pct": 0.2809,
+     "top_strict_pct": 0.2809,
+     "top_worst_excess": 0.105771
+    },
+    "classes": 1,
+    "corner_read_out_of_frame": {
+     "bottom": 31,
+     "bottom_count": 31,
+     "bottom_pct": 0.13,
+     "bottom_strict_pct": 0.13,
+     "bottom_worst_excess": 0.058277,
+     "left": 28,
+     "left_count": 28,
+     "left_pct": 0.1174,
+     "left_strict_pct": 0.1174,
+     "left_worst_excess": 0.00365,
+     "right": 78,
+     "right_count": 78,
+     "right_pct": 0.327,
+     "right_strict_pct": 0.327,
+     "right_worst_excess": 0.026843,
+     "top": 0,
+     "top_count": 0,
+     "top_pct": 0.0,
+     "top_strict_pct": 0.0,
+     "top_worst_excess": 0.0
+    },
+    "degenerate_boxes": 1,
+    "first_component": {
+     "p01": 0.0005307309329509735,
+     "p05": 0.04041936248540878,
+     "p10": 0.09034907597535935,
+     "p50": 0.4839030057191849,
+     "p90": 0.8770637810230255,
+     "p95": 0.9259116649627686,
+     "p99": 0.9688723981380463
+    },
+    "iou_corner_vs_centre": {
+     "max": 0.14285714285714646,
+     "median": 0.14285714285714285,
+     "min": 0.0,
+     "not_one_seventh": 1,
+     "not_one_seventh_pct": 0.0042
+    },
+    "one_sided_fingerprint": false,
+    "s1_orientation": "both",
+    "stored_negative_beyond_tol": 28,
+    "stored_negative_components": 28,
+    "top_classes": {
+     "apple": 23854
+    }
+   }
+  }
+ },
+ "02_TomatoMAP_2026": {
+  "samples.json": {
+   "ground_truth": {
+    "area_wh": {
+     "p05": 0.0026620629630000003,
+     "p50": 0.045285946668999995,
+     "p95": 0.655747070139
+    },
+    "aspect_pixels": {
+     "p05": 0.49832015398298957,
+     "p25": 0.7372970582360829,
+     "p50": 0.9384760377485224,
+     "p75": 1.2027014536184786,
+     "p95": 1.8010204081632653
+    },
+    "aspect_pixels_implausible_pct": 1.484,
+    "aspect_w_over_h_normalised": {
+     "p05": 0.6653178223674672,
+     "p50": 1.2528628928900496,
+     "p95": 2.4061390514180734
+    },
+    "asymmetry_x": 0.999993,
+    "asymmetry_y": 0.999991,
+    "boundary_clipping": {
+     "centre_bottom_edge": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.996279,
+      "min": 0.0044052
+     },
+     "centre_right_edge": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.993519,
+      "min": 0.00757139
+     },
+     "corner_bottom_edge": {
+      "at_boundary_pct": 7.594,
+      "exact_pct": 3.7576,
+      "max": 1.000005,
+      "min": 0.008742445
+     },
+     "corner_right_edge": {
+      "at_boundary_pct": 4.8602,
+      "exact_pct": 2.5157,
+      "max": 1.000005,
+      "min": 0.01511304
+     },
+     "extent_h": {
+      "at_boundary_pct": 0.5192,
+      "exact_pct": 0.5036,
+      "max": 1.0,
+      "min": 0.0
+     },
+     "extent_w": {
+      "at_boundary_pct": 0.3719,
+      "exact_pct": 0.3645,
+      "max": 1.0,
+      "min": 0.0008223684210526315
+     },
+     "first_component": {
+      "at_boundary_pct": 4.1342,
+      "exact_pct": 2.1292,
+      "max": 0.9870375,
+      "min": -5.000000000032756e-06
+     },
+     "second_component": {
+      "at_boundary_pct": 3.2243,
+      "exact_pct": 1.6487,
+      "max": 0.9925581450000001,
+      "min": -5.000000000032756e-06
+     }
+    },
+    "boxes": 589930,
+    "centre_read_out_of_frame": {
+     "bottom": 0,
+     "bottom_count": 0,
+     "bottom_pct": 0.0,
+     "bottom_strict_pct": 0.0,
+     "bottom_worst_excess": 0.0,
+     "left": 147106,
+     "left_count": 147105,
+     "left_pct": 24.936,
+     "left_strict_pct": 24.9362,
+     "left_worst_excess": 0.5,
+     "right": 0,
+     "right_count": 0,
+     "right_pct": 0.0,
+     "right_strict_pct": 0.0,
+     "right_worst_excess": 0.0,
+     "top": 106045,
+     "top_count": 106043,
+     "top_pct": 17.9755,
+     "top_strict_pct": 17.9759,
+     "top_worst_excess": 0.5
+    },
+    "classes": 17,
+    "corner_read_out_of_frame": {
+     "bottom": 11053,
+     "bottom_count": 0,
+     "bottom_pct": 0.0,
+     "bottom_strict_pct": 1.8736,
+     "bottom_worst_excess": 5e-06,
+     "left": 5733,
+     "left_count": 0,
+     "left_pct": 0.0,
+     "left_strict_pct": 0.9718,
+     "left_worst_excess": 5e-06,
+     "right": 6191,
+     "right_count": 0,
+     "right_pct": 0.0,
+     "right_strict_pct": 1.0494,
+     "right_worst_excess": 5e-06,
+     "top": 4406,
+     "top_count": 0,
+     "top_pct": 0.0,
+     "top_strict_pct": 0.7469,
+     "top_worst_excess": 5e-06
+    },
+    "degenerate_boxes": 1,
+    "first_component": {
+     "p01": 0.0,
+     "p05": 9.770000000000612e-05,
+     "p10": 0.0012929999999999886,
+     "p50": 0.3555555,
+     "p90": 0.5829099,
+     "p95": 0.6608445000000001,
+     "p99": 0.840536
+    },
+    "iou_corner_vs_centre": {
+     "max": 0.1428571428571503,
+     "median": 0.14285714285714285,
+     "min": 0.0,
+     "not_one_seventh": 1,
+     "not_one_seventh_pct": 0.0002
+    },
+    "one_sided_fingerprint": true,
+    "s1_orientation": "neither",
+    "stored_negative_beyond_tol": 0,
+    "stored_negative_components": 10016,
+    "top_classes": {
+     "axillary shoot": 1761,
+     "batch of flowers": 23127,
+     "batch of fruits": 37684,
+     "fully ripe": 2135,
+     "leaf": 402763,
+     "rispe": 53137,
+     "unripe green tomato": 943,
+     "whole plant": 64626
+    }
+   }
+  }
+ },
+ "03_LettuceMOTS_2024": {
+  "frames.json": {
+   "ground_truth": {
+    "area_wh": {
+     "p05": 0.0019433013260173751,
+     "p50": 0.012283950617283951,
+     "p95": 0.037421124828532236
+    },
+    "aspect_pixels": {},
+    "aspect_pixels_implausible_pct": null,
+    "aspect_w_over_h_normalised": {
+     "p05": 0.9116809116809116,
+     "p50": 1.4345991561181435,
+     "p95": 3.111111111111111
+    },
+    "asymmetry_x": 0.0,
+    "asymmetry_y": 0.999593,
+    "boundary_clipping": {
+     "centre_bottom_edge": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.9995370370370371,
+      "min": 0.000462962962962963
+     },
+     "centre_right_edge": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.7364197530864197,
+      "min": 0.27469135802469136
+     },
+     "corner_bottom_edge": {
+      "at_boundary_pct": 10.2209,
+      "exact_pct": 10.2209,
+      "max": 1.0,
+      "min": 0.000925925925925926
+     },
+     "corner_right_edge": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.7827160493827161,
+      "min": 0.30246913580246915
+     },
+     "extent_h": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.2222222222222222,
+      "min": 0.000925925925925926
+     },
+     "extent_w": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.2802469135802469,
+      "min": 0.006172839506172839
+     },
+     "first_component": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.7222222222222222,
+      "min": 0.19753086419753085
+     },
+     "second_component": {
+      "at_boundary_pct": 9.4238,
+      "exact_pct": 9.4238,
+      "max": 0.9990740740740741,
+      "min": 0.0
+     }
+    },
+    "boxes": 17562,
+    "centre_read_out_of_frame": {
+     "bottom": 0,
+     "bottom_count": 0,
+     "bottom_pct": 0.0,
+     "bottom_strict_pct": 0.0,
+     "bottom_worst_excess": 0.0,
+     "left": 0,
+     "left_count": 0,
+     "left_pct": 0.0,
+     "left_strict_pct": 0.0,
+     "left_worst_excess": 0.0,
+     "right": 0,
+     "right_count": 0,
+     "right_pct": 0.0,
+     "right_strict_pct": 0.0,
+     "right_worst_excess": 0.0,
+     "top": 2453,
+     "top_count": 2453,
+     "top_pct": 13.9677,
+     "top_strict_pct": 13.9677,
+     "top_worst_excess": 0.096759
+    },
+    "classes": 1,
+    "corner_read_out_of_frame": {
+     "bottom": 0,
+     "bottom_count": 0,
+     "bottom_pct": 0.0,
+     "bottom_strict_pct": 0.0,
+     "bottom_worst_excess": 0.0,
+     "left": 0,
+     "left_count": 0,
+     "left_pct": 0.0,
+     "left_strict_pct": 0.0,
+     "left_worst_excess": 0.0,
+     "right": 0,
+     "right_count": 0,
+     "right_pct": 0.0,
+     "right_strict_pct": 0.0,
+     "right_worst_excess": 0.0,
+     "top": 0,
+     "top_count": 0,
+     "top_pct": 0.0,
+     "top_strict_pct": 0.0,
+     "top_worst_excess": 0.0
+    },
+    "degenerate_boxes": 0,
+    "first_component": {
+     "p01": 0.2234567901234568,
+     "p05": 0.23950617283950618,
+     "p10": 0.25679012345679014,
+     "p50": 0.4567901234567901,
+     "p90": 0.5876543209876544,
+     "p95": 0.6135802469135803,
+     "p99": 0.6580246913580247
+    },
+    "iou_corner_vs_centre": {
+     "max": 0.14285714285715265,
+     "median": 0.14285714285714285,
+     "min": 0.14285714285713783,
+     "not_one_seventh": 0,
+     "not_one_seventh_pct": 0.0
+    },
+    "one_sided_fingerprint": true,
+    "s1_orientation": "neither",
+    "stored_negative_beyond_tol": 0,
+    "stored_negative_components": 0,
+    "top_classes": {
+     "lettuce": 17562
+    }
+   }
+  }
+ },
+ "04_WeedsGalore_2025": {
+  "samples.json": {
+   "ground_truth": {
+    "area_wh": {
+     "p05": 6.666666666666667e-05,
+     "p50": 0.0006666666666666668,
+     "p95": 0.013458333333333333
+    },
+    "aspect_pixels": {},
+    "aspect_pixels_implausible_pct": null,
+    "aspect_w_over_h_normalised": {
+     "p05": 0.4444444444444445,
+     "p50": 1.0,
+     "p95": 2.2499999999999996
+    },
+    "asymmetry_x": 0.998322,
+    "asymmetry_y": 0.998314,
+    "boundary_clipping": {
+     "centre_bottom_edge": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.9983333333333334,
+      "min": 0.0016666666666666668
+     },
+     "centre_right_edge": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.9983333333333334,
+      "min": 0.0016666666666666668
+     },
+     "corner_bottom_edge": {
+      "at_boundary_pct": 2.7138,
+      "exact_pct": 2.7138,
+      "max": 1.0,
+      "min": 0.0033333333333333335
+     },
+     "corner_right_edge": {
+      "at_boundary_pct": 3.0827,
+      "exact_pct": 3.0827,
+      "max": 1.0,
+      "min": 0.0033333333333333335
+     },
+     "extent_h": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.695,
+      "min": 0.0016666666666666668
+     },
+     "extent_w": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.835,
+      "min": 0.0033333333333333335
+     },
+     "first_component": {
+      "at_boundary_pct": 3.0663,
+      "exact_pct": 3.0663,
+      "max": 0.9966666666666667,
+      "min": 0.0
+     },
+     "second_component": {
+      "at_boundary_pct": 2.6564,
+      "exact_pct": 2.6564,
+      "max": 0.9966666666666667,
+      "min": 0.0
+     }
+    },
+    "boxes": 12197,
+    "centre_read_out_of_frame": {
+     "bottom": 0,
+     "bottom_count": 0,
+     "bottom_pct": 0.0,
+     "bottom_strict_pct": 0.0,
+     "bottom_worst_excess": 0.0,
+     "left": 595,
+     "left_count": 595,
+     "left_pct": 4.8782,
+     "left_strict_pct": 4.8782,
+     "left_worst_excess": 0.399167,
+     "right": 0,
+     "right_count": 0,
+     "right_pct": 0.0,
+     "right_strict_pct": 0.0,
+     "right_worst_excess": 0.0,
+     "top": 592,
+     "top_count": 592,
+     "top_pct": 4.8537,
+     "top_strict_pct": 4.8537,
+     "top_worst_excess": 0.190833
+    },
+    "classes": 5,
+    "corner_read_out_of_frame": {
+     "bottom": 0,
+     "bottom_count": 0,
+     "bottom_pct": 0.0,
+     "bottom_strict_pct": 0.0,
+     "bottom_worst_excess": 0.0,
+     "left": 0,
+     "left_count": 0,
+     "left_pct": 0.0,
+     "left_strict_pct": 0.0,
+     "left_worst_excess": 0.0,
+     "right": 0,
+     "right_count": 0,
+     "right_pct": 0.0,
+     "right_strict_pct": 0.0,
+     "right_worst_excess": 0.0,
+     "top": 0,
+     "top_count": 0,
+     "top_pct": 0.0,
+     "top_strict_pct": 0.0,
+     "top_worst_excess": 0.0
+    },
+    "degenerate_boxes": 0,
+    "first_component": {
+     "p01": 0.0,
+     "p05": 0.021666666666666667,
+     "p10": 0.07166666666666667,
+     "p50": 0.49333333333333335,
+     "p90": 0.8966666666666666,
+     "p95": 0.945,
+     "p99": 0.9833333333333333
+    },
+    "iou_corner_vs_centre": {
+     "max": 0.14285714285714596,
+     "median": 0.14285714285714285,
+     "min": 0.1428571428571392,
+     "not_one_seventh": 0,
+     "not_one_seventh_pct": 0.0
+    },
+    "one_sided_fingerprint": true,
+    "s1_orientation": "neither",
+    "stored_negative_beyond_tol": 0,
+    "stored_negative_components": 0,
+    "top_classes": {
+     "amaranth": 4115,
+     "barnyard_grass": 2535,
+     "maize": 2168,
+     "quickweed": 247,
+     "weed_other": 3132
+    }
+   }
+  }
+ },
+ "07_CropAndWeed_2023": {
+  "samples.json": {
+   "ground_truth": {
+    "area_wh": {
+     "p05": 5.457261029411765e-05,
+     "p50": 0.0004480698529411765,
+     "p95": 0.027481617647058827
+    },
+    "aspect_pixels": {
+     "p05": 0.4166666666666667,
+     "p25": 0.7391304347826086,
+     "p50": 1.0,
+     "p75": 1.368421052631579,
+     "p95": 2.5
+    },
+    "aspect_pixels_implausible_pct": 4.993,
+    "aspect_w_over_h_normalised": {
+     "p05": 0.23611111111111113,
+     "p50": 0.5666666666666667,
+     "p95": 1.4166666666666665
+    },
+    "asymmetry_x": 0.99976,
+    "asymmetry_y": 0.999858,
+    "boundary_clipping": {
+     "centre_bottom_edge": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.9995404411764706,
+      "min": 0.00045955882352941176
+     },
+     "centre_right_edge": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.9997395833333333,
+      "min": 0.00026041666666666666
+     },
+     "corner_bottom_edge": {
+      "at_boundary_pct": 2.8682,
+      "exact_pct": 2.8682,
+      "max": 1.0,
+      "min": 0.0009191176470588235
+     },
+     "corner_right_edge": {
+      "at_boundary_pct": 2.0205,
+      "exact_pct": 2.0205,
+      "max": 1.0,
+      "min": 0.0005208333333333333
+     },
+     "extent_h": {
+      "at_boundary_pct": 0.1081,
+      "exact_pct": 0.1081,
+      "max": 1.0,
+      "min": 0.0
+     },
+     "extent_w": {
+      "at_boundary_pct": 0.0849,
+      "exact_pct": 0.0849,
+      "max": 1.0,
+      "min": 0.0
+     },
+     "first_component": {
+      "at_boundary_pct": 2.3581,
+      "exact_pct": 2.3581,
+      "max": 0.9994791666666667,
+      "min": 0.0
+     },
+     "second_component": {
+      "at_boundary_pct": 3.4363,
+      "exact_pct": 3.4363,
+      "max": 0.9990808823529411,
+      "min": 0.0
+     }
+    },
+    "boxes": 111953,
+    "centre_read_out_of_frame": {
+     "bottom": 0,
+     "bottom_count": 0,
+     "bottom_pct": 0.0,
+     "bottom_strict_pct": 0.0,
+     "bottom_worst_excess": 0.0,
+     "left": 4173,
+     "left_count": 4173,
+     "left_pct": 3.7275,
+     "left_strict_pct": 3.7275,
+     "left_worst_excess": 0.5,
+     "right": 0,
+     "right_count": 0,
+     "right_pct": 0.0,
+     "right_strict_pct": 0.0,
+     "right_worst_excess": 0.0,
+     "top": 7036,
+     "top_count": 7036,
+     "top_pct": 6.2848,
+     "top_strict_pct": 6.2848,
+     "top_worst_excess": 0.5
+    },
+    "classes": 84,
+    "corner_read_out_of_frame": {
+     "bottom": 0,
+     "bottom_count": 0,
+     "bottom_pct": 0.0,
+     "bottom_strict_pct": 0.0,
+     "bottom_worst_excess": 0.0,
+     "left": 0,
+     "left_count": 0,
+     "left_pct": 0.0,
+     "left_strict_pct": 0.0,
+     "left_worst_excess": 0.0,
+     "right": 0,
+     "right_count": 0,
+     "right_pct": 0.0,
+     "right_strict_pct": 0.0,
+     "right_worst_excess": 0.0,
+     "top": 0,
+     "top_count": 0,
+     "top_pct": 0.0,
+     "top_strict_pct": 0.0,
+     "top_worst_excess": 0.0
+    },
+    "degenerate_boxes": 149,
+    "first_component": {
+     "p01": 0.0,
+     "p05": 0.03177083333333333,
+     "p10": 0.0875,
+     "p50": 0.47239583333333335,
+     "p90": 0.8791666666666667,
+     "p95": 0.9354166666666667,
+     "p99": 0.9817708333333334
+    },
+    "iou_corner_vs_centre": {
+     "max": 0.14285714285715212,
+     "median": 0.14285714285714285,
+     "min": 0.0,
+     "not_one_seventh": 149,
+     "not_one_seventh_pct": 0.1331
+    },
+    "one_sided_fingerprint": true,
+    "s1_orientation": "neither",
+    "stored_negative_beyond_tol": 0,
+    "stored_negative_components": 0,
+    "top_classes": {
+     "Green bristlegrass": 12132,
+     "Maize": 3992,
+     "Meadow-grass": 3785,
+     "Red-root amaranth": 3484,
+     "Small geranium": 4428,
+     "Soybean": 4039,
+     "Vegetation": 33000,
+     "White goosefoot": 3180
+    }
+   }
+  }
+ },
+ "08_PhenoBench_2024": {
+  "samples.json": {
+   "ground_truth_leaves": {
+    "area_wh": {
+     "p05": 9.059906005859375e-05,
+     "p50": 0.00201416015625,
+     "p95": 0.0162353515625
+    },
+    "aspect_pixels": {
+     "p05": 0.41346153846153844,
+     "p25": 0.7196969696969697,
+     "p50": 1.0,
+     "p75": 1.375,
+     "p95": 2.3518518518518516
+    },
+    "aspect_pixels_implausible_pct": 4.437,
+    "aspect_w_over_h_normalised": {
+     "p05": 0.41333333333333333,
+     "p50": 1.0,
+     "p95": 2.3518518518518516
+    },
+    "asymmetry_x": 0.999887,
+    "asymmetry_y": 0.999877,
+    "boundary_clipping": {
+     "centre_bottom_edge": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.99951171875,
+      "min": 0.00048828125
+     },
+     "centre_right_edge": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.99951171875,
+      "min": 0.00048828125
+     },
+     "corner_bottom_edge": {
+      "at_boundary_pct": 5.2151,
+      "exact_pct": 5.2151,
+      "max": 1.0,
+      "min": 0.0009765625
+     },
+     "corner_right_edge": {
+      "at_boundary_pct": 4.6831,
+      "exact_pct": 4.6831,
+      "max": 1.0,
+      "min": 0.0009765625
+     },
+     "extent_h": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.57421875,
+      "min": 0.0009765625
+     },
+     "extent_w": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.3388671875,
+      "min": 0.0009765625
+     },
+     "first_component": {
+      "at_boundary_pct": 5.5026,
+      "exact_pct": 5.5026,
+      "max": 0.9990234375,
+      "min": 0.0
+     },
+     "second_component": {
+      "at_boundary_pct": 5.0137,
+      "exact_pct": 5.0137,
+      "max": 0.9990234375,
+      "min": 0.0
+     }
+    },
+    "boxes": 106767,
+    "centre_read_out_of_frame": {
+     "bottom": 0,
+     "bottom_count": 0,
+     "bottom_pct": 0.0,
+     "bottom_strict_pct": 0.0,
+     "bottom_worst_excess": 0.0,
+     "left": 8864,
+     "left_count": 8864,
+     "left_pct": 8.3022,
+     "left_strict_pct": 8.3022,
+     "left_worst_excess": 0.159668,
+     "right": 0,
+     "right_count": 0,
+     "right_pct": 0.0,
+     "right_strict_pct": 0.0,
+     "right_worst_excess": 0.0,
+     "top": 8130,
+     "top_count": 8130,
+     "top_pct": 7.6147,
+     "top_strict_pct": 7.6147,
+     "top_worst_excess": 0.121582
+    },
+    "classes": 1,
+    "corner_read_out_of_frame": {
+     "bottom": 0,
+     "bottom_count": 0,
+     "bottom_pct": 0.0,
+     "bottom_strict_pct": 0.0,
+     "bottom_worst_excess": 0.0,
+     "left": 0,
+     "left_count": 0,
+     "left_pct": 0.0,
+     "left_strict_pct": 0.0,
+     "left_worst_excess": 0.0,
+     "right": 0,
+     "right_count": 0,
+     "right_pct": 0.0,
+     "right_strict_pct": 0.0,
+     "right_worst_excess": 0.0,
+     "top": 0,
+     "top_count": 0,
+     "top_pct": 0.0,
+     "top_strict_pct": 0.0,
+     "top_worst_excess": 0.0
+    },
+    "degenerate_boxes": 0,
+    "first_component": {
+     "p01": 0.0,
+     "p05": 0.0,
+     "p10": 0.046875,
+     "p50": 0.4619140625,
+     "p90": 0.88671875,
+     "p95": 0.939453125,
+     "p99": 0.9873046875
+    },
+    "iou_corner_vs_centre": {
+     "max": 0.14285714285714285,
+     "median": 0.14285714285714285,
+     "min": 0.14285714285714285,
+     "not_one_seventh": 0,
+     "not_one_seventh_pct": 0.0
+    },
+    "one_sided_fingerprint": true,
+    "s1_orientation": "neither",
+    "stored_negative_beyond_tol": 0,
+    "stored_negative_components": 0,
+    "top_classes": {
+     "leaf": 106767
+    }
+   },
+   "ground_truth_plants": {
+    "area_wh": {
+     "p05": 0.00011539459228515625,
+     "p50": 0.0028543472290039062,
+     "p95": 0.10275650024414062
+    },
+    "aspect_pixels": {
+     "p05": 0.3736842105263158,
+     "p25": 0.7452830188679245,
+     "p50": 1.0,
+     "p75": 1.3225806451612903,
+     "p95": 2.6451612903225805
+    },
+    "aspect_pixels_implausible_pct": 7.08,
+    "aspect_w_over_h_normalised": {
+     "p05": 0.3736842105263158,
+     "p50": 1.0,
+     "p95": 2.6470588235294117
+    },
+    "asymmetry_x": 0.99979,
+    "asymmetry_y": 0.999759,
+    "boundary_clipping": {
+     "centre_bottom_edge": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.99951171875,
+      "min": 0.00048828125
+     },
+     "centre_right_edge": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.99951171875,
+      "min": 0.00048828125
+     },
+     "corner_bottom_edge": {
+      "at_boundary_pct": 9.2,
+      "exact_pct": 9.2,
+      "max": 1.0,
+      "min": 0.0009765625
+     },
+     "corner_right_edge": {
+      "at_boundary_pct": 8.9337,
+      "exact_pct": 8.9337,
+      "max": 1.0,
+      "min": 0.0009765625
+     },
+     "extent_h": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.6767578125,
+      "min": 0.0009765625
+     },
+     "extent_w": {
+      "at_boundary_pct": 0.0,
+      "exact_pct": 0.0,
+      "max": 0.6875,
+      "min": 0.0009765625
+     },
+     "first_component": {
+      "at_boundary_pct": 10.2616,
+      "exact_pct": 10.2616,
+      "max": 0.9990234375,
+      "min": 0.0
+     },
+     "second_component": {
+      "at_boundary_pct": 8.8516,
+      "exact_pct": 8.8516,
+      "max": 0.9990234375,
+      "min": 0.0
+     }
+    },
+    "boxes": 30424,
+    "centre_read_out_of_frame": {
+     "bottom": 0,
+     "bottom_count": 0,
+     "bottom_pct": 0.0,
+     "bottom_strict_pct": 0.0,
+     "bottom_worst_excess": 0.0,
+     "left": 4760,
+     "left_count": 4760,
+     "left_pct": 15.6455,
+     "left_strict_pct": 15.6455,
+     "left_worst_excess": 0.331055,
+     "right": 0,
+     "right_count": 0,
+     "right_pct": 0.0,
+     "right_strict_pct": 0.0,
+     "right_worst_excess": 0.0,
+     "top": 4149,
+     "top_count": 4149,
+     "top_pct": 13.6373,
+     "top_strict_pct": 13.6373,
+     "top_worst_excess": 0.290527
+    },
+    "classes": 4,
+    "corner_read_out_of_frame": {
+     "bottom": 0,
+     "bottom_count": 0,
+     "bottom_pct": 0.0,
+     "bottom_strict_pct": 0.0,
+     "bottom_worst_excess": 0.0,
+     "left": 0,
+     "left_count": 0,
+     "left_pct": 0.0,
+     "left_strict_pct": 0.0,
+     "left_worst_excess": 0.0,
+     "right": 0,
+     "right_count": 0,
+     "right_pct": 0.0,
+     "right_strict_pct": 0.0,
+     "right_worst_excess": 0.0,
+     "top": 0,
+     "top_count": 0,
+     "top_pct": 0.0,
+     "top_strict_pct": 0.0,
+     "top_worst_excess": 0.0
+    },
+    "degenerate_boxes": 0,
+    "first_component": {
+     "p01": 0.0,
+     "p05": 0.0,
+     "p10": 0.0,
+     "p50": 0.431640625,
+     "p90": 0.8779296875,
+     "p95": 0.9384765625,
+     "p99": 0.986328125
+    },
+    "iou_corner_vs_centre": {
+     "max": 0.14285714285714285,
+     "median": 0.14285714285714285,
+     "min": 0.14285714285714285,
+     "not_one_seventh": 0,
+     "not_one_seventh_pct": 0.0
+    },
+    "one_sided_fingerprint": true,
+    "s1_orientation": "neither",
+    "stored_negative_beyond_tol": 0,
+    "stored_negative_components": 0,
+    "top_classes": {
+     "crop": 13905,
+     "partial_crop": 4452,
+     "partial_weed": 954,
+     "weed": 11113
+    }
+   }
+  }
+ }
+}

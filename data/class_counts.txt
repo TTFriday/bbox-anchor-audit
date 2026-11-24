@@ -1,0 +1,7 @@
+01_AppleGrowthVision_2025    samples.json  ground_truth             n=  23854 classes=  1 declared_sizes=True
+02_TomatoMAP_2026            samples.json  ground_truth             n= 589930 classes= 17 declared_sizes=True
+03_LettuceMOTS_2024          frames.json   ground_truth             n=  17562 classes=  1 declared_sizes=False
+04_WeedsGalore_2025          samples.json  ground_truth             n=  12197 classes=  5 declared_sizes=False
+07_CropAndWeed_2023          samples.json  ground_truth             n= 111953 classes= 84 declared_sizes=True
+08_PhenoBench_2024           samples.json  ground_truth_leaves      n= 106767 classes=  1 declared_sizes=True
+08_PhenoBench_2024           samples.json  ground_truth_plants      n=  30424 classes=  4 declared_sizes=True
