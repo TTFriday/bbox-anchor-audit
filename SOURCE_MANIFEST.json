@@ -1,0 +1,222 @@
+{
+  "package": "bbox-anchor-audit",
+  "source_workspace_paths_are_relative": true,
+  "notes": [
+    "Original projects were read only.",
+    "Published hashes describe the portable copies, not the originals.",
+    "Machine snapshots and embedded source-code dumps were removed.",
+    "Path normalization changes file hashes but not scientific table values."
+  ],
+  "files": [
+    {
+      "published_path": "DATA_SOURCES.md",
+      "source_path": null,
+      "source_sha256": null,
+      "published_sha256": "075d274c5d6df6c8e86fb9105f29ac1301ff7511b70d47bf91952910eee58bda",
+      "transformation": "generated"
+    },
+    {
+      "published_path": "README.md",
+      "source_path": null,
+      "source_sha256": null,
+      "published_sha256": "4723707144b5c7861c871e95020d645abf46c64d86d8713dcf25ef62fd10c453",
+      "transformation": "generated"
+    },
+    {
+      "published_path": "data/class_counts.txt",
+      "source_path": "anchor_audit_paper/data/class_counts.txt",
+      "source_sha256": "eb3cd080db9085ec72142b921529a3536b0d854f4a97eb437b3e87bd261831ee",
+      "published_sha256": "eb3cd080db9085ec72142b921529a3536b0d854f4a97eb437b3e87bd261831ee",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "data/confirmation_paths.json",
+      "source_path": "anchor_audit_paper/data/confirmation_paths.json",
+      "source_sha256": "b87345e510a0e948f4030c881c10b3d0d965deccf7ad5f1eb3ca97c7ac208e31",
+      "published_sha256": "c5e853b910079a2a02885f04ba207983e7b826aea6a8802a51313ecc7d0619c0",
+      "transformation": "scope note clarified"
+    },
+    {
+      "published_path": "data/convention_enumeration.json",
+      "source_path": "anchor_audit_paper/data/convention_enumeration.json",
+      "source_sha256": "8d10b39df2e55090bece4b43a84bf9ad58a0c0480472fed8139472027570c261",
+      "published_sha256": "8d10b39df2e55090bece4b43a84bf9ad58a0c0480472fed8139472027570c261",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "data/fingerprint.json",
+      "source_path": "anchor_audit_paper/data/fingerprint.json",
+      "source_sha256": "47d4015ae7985bf42e20be1a55ceb9bde3b75bf200fcc5a5df0671c045919605",
+      "published_sha256": "47d4015ae7985bf42e20be1a55ceb9bde3b75bf200fcc5a5df0671c045919605",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "data/fingerprint_01_bysite.json",
+      "source_path": "anchor_audit_paper/data/fingerprint_01_bysite.json",
+      "source_sha256": "95deb7e2255db4c6b089952762b24de7b71c12a1669dcdd9201610647337f34d",
+      "published_sha256": "95deb7e2255db4c6b089952762b24de7b71c12a1669dcdd9201610647337f34d",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "data/provenance.txt",
+      "source_path": "anchor_audit_paper/data/provenance.txt",
+      "source_sha256": "86eb3c49f099bcdacddd459dc7650f9aa555903f5d612aa8e604d7a22fcf2815",
+      "published_sha256": "86eb3c49f099bcdacddd459dc7650f9aa555903f5d612aa8e604d7a22fcf2815",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "data/size_check_01.json",
+      "source_path": "anchor_audit_paper/data/size_check_01.json",
+      "source_sha256": "59981ab2dfeea930c9cb4931fcea51be35c8f522b521877aead5bce5ece69325",
+      "published_sha256": "59981ab2dfeea930c9cb4931fcea51be35c8f522b521877aead5bce5ece69325",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "data/size_check_02_TomatoMAP_2026.json",
+      "source_path": "anchor_audit_paper/data/size_check_02_TomatoMAP_2026.json",
+      "source_sha256": "e1bab2ba746ef4f6707619aad2ece42fb02067a292ffff1e2e3b4b2cfeccfec5",
+      "published_sha256": "e1bab2ba746ef4f6707619aad2ece42fb02067a292ffff1e2e3b4b2cfeccfec5",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "data/size_check_07_CropAndWeed_2023.json",
+      "source_path": "anchor_audit_paper/data/size_check_07_CropAndWeed_2023.json",
+      "source_sha256": "462a0a0948a768e215aa20a34ea0c696ea95c4ecc8c7b17e3940f0bf7b6fed9c",
+      "published_sha256": "462a0a0948a768e215aa20a34ea0c696ea95c4ecc8c7b17e3940f0bf7b6fed9c",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "data/size_check_08_PhenoBench_2024.json",
+      "source_path": "anchor_audit_paper/data/size_check_08_PhenoBench_2024.json",
+      "source_sha256": "2f188c65e0be911af8a82d3a5255d8a084604925c97fb782462e9824768d9116",
+      "published_sha256": "2f188c65e0be911af8a82d3a5255d8a084604925c97fb782462e9824768d9116",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "data/subset_probe_02.json",
+      "source_path": "anchor_audit_paper/data/subset_probe_02.json",
+      "source_sha256": "03ba0c7a4eebf53eb11de97f457f45d52e6e09c018a99e2a410ce899a40ba8bd",
+      "published_sha256": "03ba0c7a4eebf53eb11de97f457f45d52e6e09c018a99e2a410ce899a40ba8bd",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "data/subset_probe_02_bymask.json",
+      "source_path": "anchor_audit_paper/data/subset_probe_02_bymask.json",
+      "source_sha256": "8480920188749a3b477c17ac6ad7c17f2bfd886c567708ab48c8a11c005b87d3",
+      "published_sha256": "8480920188749a3b477c17ac6ad7c17f2bfd886c567708ab48c8a11c005b87d3",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "data/subset_probe_02_bypath.json",
+      "source_path": "anchor_audit_paper/data/subset_probe_02_bypath.json",
+      "source_sha256": "03738353396628c674ad6be0ad1ac99b8d937140b13e4bb93d28a3abdcf935d2",
+      "published_sha256": "03738353396628c674ad6be0ad1ac99b8d937140b13e4bb93d28a3abdcf935d2",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "environment.md",
+      "source_path": null,
+      "source_sha256": null,
+      "published_sha256": "72776861aec992b48cac9bdd9c1c3f37f3021a0f6304bb7c1d91dead7501283a",
+      "transformation": "generated"
+    },
+    {
+      "published_path": "requirements.txt",
+      "source_path": null,
+      "source_sha256": null,
+      "published_sha256": "bcd683190328233a50f7604b4bc3781fb37d97dde898a1de8ec11a7ab0004fae",
+      "transformation": "generated"
+    },
+    {
+      "published_path": "results/logs/contain.log",
+      "source_path": "search/contain.log",
+      "source_sha256": "e30cc330bf90530a7bb238d65019d79b06f0bbb76bc74ea3a91e46cd4203b69a",
+      "published_sha256": "e30cc330bf90530a7bb238d65019d79b06f0bbb76bc74ea3a91e46cd4203b69a",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "results/logs/conv_scan.log",
+      "source_path": "search/conv_scan.log",
+      "source_sha256": "af90fd01db1fa8f4afacc8d7a5423b4c4e0fb94b5494f767958d7d0777eee5e1",
+      "published_sha256": "7a541cc69bab5ec8cdb01ce1c20fc77e175049623f06534f1ca8397253dd24ac",
+      "transformation": "text decoded as UTF-8; path strings normalized"
+    },
+    {
+      "published_path": "results/logs/fingerprint.log",
+      "source_path": "anchor_audit_paper/data/fingerprint.log",
+      "source_sha256": "49b0081c32d12749747360d70183ba568955887fdfa9e2d29a56f335ea8e6f36",
+      "published_sha256": "49b0081c32d12749747360d70183ba568955887fdfa9e2d29a56f335ea8e6f36",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "results/logs/fingerprint_01_bysite.log",
+      "source_path": "anchor_audit_paper/data/fingerprint_01_bysite.log",
+      "source_sha256": "a382df020a3841eeab67262071aacb5deb8f8ae83802250b517d914d6551ed35",
+      "published_sha256": "a382df020a3841eeab67262071aacb5deb8f8ae83802250b517d914d6551ed35",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "results/logs/mask_place.log",
+      "source_path": "search/mask_place.log",
+      "source_sha256": "28a5b0e54bf6b885b5493cedc114fb4443dca769e4601340f58007077cb305c5",
+      "published_sha256": "45c538e8c641678de90b6d38c50b5fe89ccdd13fe08a714bdb64592e7ed9ac71",
+      "transformation": "text decoded as UTF-8; path strings normalized"
+    },
+    {
+      "published_path": "results/logs/mask_reg.log",
+      "source_path": "search/mask_reg.log",
+      "source_sha256": "58625cc2f0166beeb15afc70427fe67bbce61a4ad3c79ef7821442e175c0a760",
+      "published_sha256": "58625cc2f0166beeb15afc70427fe67bbce61a4ad3c79ef7821442e175c0a760",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "scripts/convention_enumeration.py",
+      "source_path": "anchor_audit_paper/scripts/convention_enumeration.py",
+      "source_sha256": "11c47ba494043ce5e822e89a050a7b859b79cf7493b370e50816a4f52efd849b",
+      "published_sha256": "11c47ba494043ce5e822e89a050a7b859b79cf7493b370e50816a4f52efd849b",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "scripts/declared_size_check.py",
+      "source_path": "anchor_audit_paper/scripts/declared_size_check.py",
+      "source_sha256": "28c1795f89ae8f4b7104c71b0f463e187df72312ee3f082fcb6af67749438125",
+      "published_sha256": "ec6481dfcab7a9a45c9505440edddefc067e6aec45be0ca6a42fd505c536b8c6",
+      "transformation": "public documentation/read-only defaults corrected"
+    },
+    {
+      "published_path": "scripts/fingerprint.py",
+      "source_path": "anchor_audit_paper/scripts/fingerprint.py",
+      "source_sha256": "3256ee6874b7105a17f96028333e60b03977189c88a1ab3b5361b9509397be0b",
+      "published_sha256": "e8a5322c5640466a9c93282b007cfa031d3eb1ea8b5eb3fae65e414f5870c5e1",
+      "transformation": "public documentation/read-only defaults corrected"
+    },
+    {
+      "published_path": "scripts/media_confirmation.py",
+      "source_path": null,
+      "source_sha256": null,
+      "published_sha256": "fbdf2e9f2f389d874fc9dd227d6768d1f0cb66d4bf5189c3d681a8977ec696bb",
+      "transformation": "generated"
+    },
+    {
+      "published_path": "scripts/provenance_notes.py",
+      "source_path": "anchor_audit_paper/scripts/provenance_notes.py",
+      "source_sha256": "2e8111bbedfeb65c427a1fa0d1aeac9da0e82a755403196e69a3539b31cf6ce4",
+      "published_sha256": "8812e1f348177411f9ae9cbaa763b5d9c03261d82930a8cdaa2a4f0fef49908f",
+      "transformation": "public documentation/read-only defaults corrected"
+    },
+    {
+      "published_path": "scripts/subset_probe.py",
+      "source_path": "anchor_audit_paper/scripts/subset_probe.py",
+      "source_sha256": "7f6cd5eb6fa41927ddf274c9302493b12b96f7d66cbd8416c9c28c3340d93dd6",
+      "published_sha256": "7f6cd5eb6fa41927ddf274c9302493b12b96f7d66cbd8416c9c28c3340d93dd6",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "tests/test_geometry.py",
+      "source_path": null,
+      "source_sha256": null,
+      "published_sha256": "ebe8fc4aa9ec813106170c293b21ff94a0f3c51f35c5402ed8f9119e6f9203f9",
+      "transformation": "generated"
+    }
+  ]
+}
